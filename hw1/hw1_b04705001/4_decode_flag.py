@@ -1,0 +1,30 @@
+import signal
+import sys
+import os
+import time
+
+from base64 import b64encode
+from base64 import b64decode
+
+flag1 = "iVBORw0KGgoAAAANSUhEUgAAAS4AAAAeCAIAAAAdL2QNAAAFA0lEQVR4Xu2aPZbTMBCAx5zFoeBxguQECQ0VLZ1TJk26Lelo4nLT0VLRYJ9gcwIexdp3CYV+LI1GI9lOQuDNV21kaf40I8nyAgiCIAiCIAiCIAiCIAiCIAiCIAjXZHnsLpfL5dIdl6mugvAA5GXsG+bZQ7I8ftuVqU6CYNB14JRBTstNKHffGA3RUqyaC6Kpgk6m3MOHejgxBkkeeth2LyKqdej1/m0JAH29KhZ70OodLVrIrYPK+n5dBj"
+flag2 = "13UDabMG3uMRc3wboyKuTUqPN+UazqHgDKt+/Z0RQoAWij3E4o4JFSpMSaPs4sBrWFCxaNMcqXYW3eCsb360HOwvW1MevmWP5uKVKO6Bg6bTktE+c3WRFMjBMH1L5eFUVR6JqG9UfPyU8fSoB2u20BoPzwKW2vGmGlWrkOfd8DrA+Zzp++qMVGKbfiv5xSA+cy3vfx2LP4EK9i26ZGPQTttrAs9udU98ejetqVAH1dj5rfaaMSoNMzdZhWbd1xqQueOFfGtlFybTDLBrXvxXZFTxOl01+lw9cDLDhzAeR8"
+flag3 = "rxrV4JvjbXBZWozp9EKKtTSB846H6s+mcq3QNgQbr5UQDR1HbINFCeREjbHNH4sfoQh0XcSRcDtKtwz2ERtmFHZUcleMQRyN0GQM2UilcWRKPLHoobXVlYw8iC8JZirCakP4pTGtFFnf/RS+NNW0Yxu7bBFacMRdB+lIuEnjSkqFjiP01K+IMFEZ22iBfmYMrdcrRcq+5HylRsUWqSSRAMUyN5aPhGIsGa3CTRX904wMouJMiqPQmXtPsWqYU4q878YaXBS2R56mRAoEWlDIvV84cuh3MFl86DjipThI9d"
+flag4 = "dM1jYudGEE6KxLFV7QgqXkzVd6lDE4JQmBY4ADhhQFS3i8FMEfgRPCzZ3OHgD5UiSfEBa4TTNKMeF7IChMz8AygiCkPoS5rkv+48BZPzp0FkVDx8H3GyIxGM7axoWOiEC8FMNu0ZZoDbHOZ4xKLGi53xXP+68tDLex1cc1AEC5e1GxedHf+vx7HY7zfmEuIYgb3vP+c91DuXuqvMZFsW2pzzPn3x0AAHS/73BDMN/3LIxP+WLP33/2ALA+HKvjYQ0A/c/vd4hHPst3C/PnlFv9iZw2+O6Ibzlt8GWTaik2"
+flag5 = "3GVgcpS+hOvrVeQeK7cUTQL2r7+GHwR84lSNt7Y4UxOgan99OPhdTj/azIn89aoufe1l7FLlJ7Q/nJAae83DNON915Y496DpmbWuAqyf/R0jvnHrWix3z7uSqkQbCzIUA3mhG4vJxbbtsVdR2yaGziXcdXNaro/6IN5+HX2fzL4rkmc5/0BFnCyaihbqn3nDAPmtQS+nlTqZxLRFPEweUNO+xw9OHjnzznhA2uGNoCPpYnp4jx0fEMnYsJ46ButOSl7CtiyBhtARpCy75frQiesQ2xXN8cihr1dqOVL7Al"
+flag6 = "5z9ZLM7Yvn/QJ9SFT/NRNZJ9QpdTqnDf5u2W4Hbb70dpv3yW6a76dNnnTMaRN8SWy37Hc6s5WSO5j+DGp+2M3FDYU69vChm0DVPK/tpmC+BrvvHzHbRoUudMRurM67S06LkCayGwga8rbnHgewqTyybVck7Wb2u+KjoBawcvdyu3IkT2eXMMFncwNF+h+O5r3VcdzA5n+Gqb4vj52+3DNbNcU/V4pzT63/NzevRGEGff15xhlfEARBEARBEARBEARBEARBEAThr/IHj+oKZBQsYE0AAAAASUVORK5CYII="
+'''
+flag1.encode("base64")
+flag2.encode("base64")
+flag3.encode("base64")
+flag4.encode("base64")
+flag5.encode("base64")
+flag6.encode("base64")
+'''
+
+#flag1 = flag1.decode("base64")
+
+flag = flag1 + flag2 + flag3 + flag4 + flag5 + flag6
+
+file = open("flag.png","w")
+
+file.write(flag.decode("base64"))
